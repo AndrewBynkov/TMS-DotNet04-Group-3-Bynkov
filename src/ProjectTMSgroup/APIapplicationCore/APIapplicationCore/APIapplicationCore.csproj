@@ -10,10 +10,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ConstantsWeather\" />
     <Folder Include="ConstantsConverter\" />
     <Folder Include="InterfacesConverter\" />
-    <Folder Include="ModelsWeather\" />
     <Folder Include="ModelsConverter\" />
     <Folder Include="ServicesConverter\" />
   </ItemGroup>
