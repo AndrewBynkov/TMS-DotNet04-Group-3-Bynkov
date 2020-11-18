@@ -1,0 +1,5 @@
+C:\Users\Admin\source\Repos\TMS-DotNet04-Group-3-Bynkov\src\TeachMeSkills\TeachMeSkills\APIaplications\ClassLibrary1\bin\Debug\netcoreapp3.1\APIapplicationsCore.deps.json
+C:\Users\Admin\source\Repos\TMS-DotNet04-Group-3-Bynkov\src\TeachMeSkills\TeachMeSkills\APIaplications\ClassLibrary1\bin\Debug\netcoreapp3.1\APIapplicationsCore.dll
+C:\Users\Admin\source\Repos\TMS-DotNet04-Group-3-Bynkov\src\TeachMeSkills\TeachMeSkills\APIaplications\ClassLibrary1\obj\Debug\netcoreapp3.1\APIapplicationsCore.AssemblyInfoInputs.cache
+C:\Users\Admin\source\Repos\TMS-DotNet04-Group-3-Bynkov\src\TeachMeSkills\TeachMeSkills\APIaplications\ClassLibrary1\obj\Debug\netcoreapp3.1\APIapplicationsCore.AssemblyInfo.cs
+C:\Users\Admin\source\Repos\TMS-DotNet04-Group-3-Bynkov\src\TeachMeSkills\TeachMeSkills\APIaplications\ClassLibrary1\obj\Debug\netcoreapp3.1\APIapplicationsCore.csprojAssemblyReference.cache
