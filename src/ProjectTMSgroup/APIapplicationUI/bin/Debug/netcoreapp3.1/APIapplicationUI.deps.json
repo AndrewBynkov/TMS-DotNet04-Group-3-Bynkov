@@ -6,13 +6,12 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "APIapplicationCore/1.0.0": {
+      "APIapplicationUI/1.0.0": {
         "dependencies": {
-          "Flurl": "3.0.0",
-          "Flurl.Http": "3.0.0"
+          "APIapplicationCore": "1.0.0"
         },
         "runtime": {
-          "APIapplicationCore.dll": {}
+          "APIapplicationUI.dll": {}
         }
       },
       "Flurl/3.0.0": {
@@ -51,11 +50,20 @@
           "Microsoft.NETCore.Platforms": "2.1.2",
           "System.Runtime.CompilerServices.Unsafe": "4.5.2"
         }
+      },
+      "APIapplicationCore/1.0.0": {
+        "dependencies": {
+          "Flurl": "3.0.0",
+          "Flurl.Http": "3.0.0"
+        },
+        "runtime": {
+          "APIapplicationCore.dll": {}
+        }
       }
     }
   },
   "libraries": {
-    "APIapplicationCore/1.0.0": {
+    "APIapplicationUI/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -101,6 +109,11 @@
       "sha512": "sha512-4J2JQXbftjPMppIHJ7IC+VXQ9XfEagN92vZZNoG12i+zReYlim5dMoXFC1Zzg7tsnKDM7JPo5bYfFK4Jheq44w==",
       "path": "system.text.encoding.codepages/4.5.1",
       "hashPath": "system.text.encoding.codepages.4.5.1.nupkg.sha512"
+    },
+    "APIapplicationCore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
