@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "tUCYS3jLaypR4iglO0yiFp2a/NRTGYz7af8eLkD/sMqTV/b46VKiahOmcM1bAugd3AWNFZhCYGxGA4yfDAukcQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Admin\\source\\Repos\\TMS-DotNet04-Group-3-Bynkov\\src\\APIapplicationCore\\APIapplicationCore\\APIapplicationCore.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\flurl\\3.0.0\\flurl.3.0.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\flurl.http\\3.0.0\\flurl.http.3.0.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.2\\microsoft.netcore.platforms.2.1.2.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.text.encoding.codepages\\4.5.1\\system.text.encoding.codepages.4.5.1.nupkg.sha512"
+  ],
+  "logs": []
+}

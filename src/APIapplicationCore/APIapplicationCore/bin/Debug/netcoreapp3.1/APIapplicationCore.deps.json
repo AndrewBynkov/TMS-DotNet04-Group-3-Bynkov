@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "APIapplicationCore/1.0.0": {
+        "dependencies": {
+          "Flurl": "3.0.0"
+        },
+        "runtime": {
+          "APIapplicationCore.dll": {}
+        }
+      },
+      "Flurl/3.0.0": {
+        "runtime": {
+          "lib/netstandard2.0/Flurl.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "APIapplicationCore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Flurl/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ChxU0nz82zTbMX25+B0HpvmYp63VsYWjYGI0N3ovsN6rzyxSwp3UMKm69dL1JA/sNCSCrTo70R9ZSiQCE6+Rqw==",
+      "path": "flurl/3.0.0",
+      "hashPath": "flurl.3.0.0.nupkg.sha512"
+    }
+  }
+}
