@@ -1,0 +1,4 @@
+C:\Users\Admin\source\Repos\TMS-DotNet04-Group-3-Bynkov\src\ProjectTMSgroup\APIapplicationCore\APIapplicationCore\bin\Debug\netcoreapp3.1\APIapplicationCore.deps.json
+C:\Users\Admin\source\Repos\TMS-DotNet04-Group-3-Bynkov\src\ProjectTMSgroup\APIapplicationCore\APIapplicationCore\bin\Debug\netcoreapp3.1\APIapplicationCore.dll
+C:\Users\Admin\source\Repos\TMS-DotNet04-Group-3-Bynkov\src\ProjectTMSgroup\APIapplicationCore\APIapplicationCore\obj\Debug\netcoreapp3.1\APIapplicationCore.AssemblyInfoInputs.cache
+C:\Users\Admin\source\Repos\TMS-DotNet04-Group-3-Bynkov\src\ProjectTMSgroup\APIapplicationCore\APIapplicationCore\obj\Debug\netcoreapp3.1\APIapplicationCore.AssemblyInfo.cs

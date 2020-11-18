@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Flurl" Version="3.0.0" />
+    <PackageReference Include="Flurl.Http" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ConstantsWeather\" />
+    <Folder Include="ConstantsConverter\" />
+    <Folder Include="InterfacesConverter\" />
+    <Folder Include="InterfacesWeather\" />
+    <Folder Include="ModelsWeather\" />
+    <Folder Include="ModelsConverter\" />
+    <Folder Include="ServicesConverter\" />
+    <Folder Include="ServicesWeather\" />
+  </ItemGroup>
+
+</Project>
