@@ -7,3 +7,12 @@ C:\Users\Admin\source\Repos\TMS-DotNet04-Group-3-Bynkov\src\ProjectTMSgroup\APIa
 C:\Users\Admin\source\Repos\TMS-DotNet04-Group-3-Bynkov\src\ProjectTMSgroup\APIapplicationCore\APIapplicationCore\obj\Debug\netcoreapp3.1\APIapplicationCore.csproj.CoreCompileInputs.cache
 C:\Users\Admin\source\Repos\TMS-DotNet04-Group-3-Bynkov\src\ProjectTMSgroup\APIapplicationCore\APIapplicationCore\obj\Debug\netcoreapp3.1\APIapplicationCore.dll
 C:\Users\Admin\source\Repos\TMS-DotNet04-Group-3-Bynkov\src\ProjectTMSgroup\APIapplicationCore\APIapplicationCore\obj\Debug\netcoreapp3.1\APIapplicationCore.pdb
+C:\Users\HP\Documents\GitHub\TMS-DotNet04-Group-3-Bynkov\src\ProjectTMSgroup\APIapplicationCore\APIapplicationCore\bin\Debug\netcoreapp3.1\APIapplicationCore.deps.json
+C:\Users\HP\Documents\GitHub\TMS-DotNet04-Group-3-Bynkov\src\ProjectTMSgroup\APIapplicationCore\APIapplicationCore\bin\Debug\netcoreapp3.1\APIapplicationCore.dll
+C:\Users\HP\Documents\GitHub\TMS-DotNet04-Group-3-Bynkov\src\ProjectTMSgroup\APIapplicationCore\APIapplicationCore\bin\Debug\netcoreapp3.1\APIapplicationCore.pdb
+C:\Users\HP\Documents\GitHub\TMS-DotNet04-Group-3-Bynkov\src\ProjectTMSgroup\APIapplicationCore\APIapplicationCore\obj\Debug\netcoreapp3.1\APIapplicationCore.csprojAssemblyReference.cache
+C:\Users\HP\Documents\GitHub\TMS-DotNet04-Group-3-Bynkov\src\ProjectTMSgroup\APIapplicationCore\APIapplicationCore\obj\Debug\netcoreapp3.1\APIapplicationCore.AssemblyInfoInputs.cache
+C:\Users\HP\Documents\GitHub\TMS-DotNet04-Group-3-Bynkov\src\ProjectTMSgroup\APIapplicationCore\APIapplicationCore\obj\Debug\netcoreapp3.1\APIapplicationCore.AssemblyInfo.cs
+C:\Users\HP\Documents\GitHub\TMS-DotNet04-Group-3-Bynkov\src\ProjectTMSgroup\APIapplicationCore\APIapplicationCore\obj\Debug\netcoreapp3.1\APIapplicationCore.dll
+C:\Users\HP\Documents\GitHub\TMS-DotNet04-Group-3-Bynkov\src\ProjectTMSgroup\APIapplicationCore\APIapplicationCore\obj\Debug\netcoreapp3.1\APIapplicationCore.pdb
+C:\Users\HP\Documents\GitHub\TMS-DotNet04-Group-3-Bynkov\src\ProjectTMSgroup\APIapplicationCore\APIapplicationCore\obj\Debug\netcoreapp3.1\APIapplicationCore.csproj.CoreCompileInputs.cache

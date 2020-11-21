@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "SPo0eL59bw3zeN9+e1+NbmPg+4QesdnAzCDm7tmgnaoMb/WO1akv0rQYTaVEysgu5OJZpqSg2KoKB9Ab3OvvUA==",
+  "dgSpecHash": "e2iDc86CjunKSUpTMWWyEdKs9c0aiblB4Sk6uBKNXQZnf2JQjpkn3FRkCNxK68FMJUNKvATrdxsAuSPS3T9Zjg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\source\\Repos\\TMS-DotNet04-Group-3-Bynkov\\src\\ProjectTMSgroup\\APIapplicationCore\\APIapplicationCore\\APIapplicationCore.csproj",
+  "projectFilePath": "C:\\Users\\HP\\Documents\\GitHub\\TMS-DotNet04-Group-3-Bynkov\\src\\ProjectTMSgroup\\APIapplicationCore\\APIapplicationCore\\APIapplicationCore.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Admin\\.nuget\\packages\\flurl\\3.0.0\\flurl.3.0.0.nupkg.sha512",
-    "C:\\Users\\Admin\\.nuget\\packages\\flurl.http\\3.0.0\\flurl.http.3.0.0.nupkg.sha512",
-    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.2\\microsoft.netcore.platforms.2.1.2.nupkg.sha512",
-    "C:\\Users\\Admin\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
-    "C:\\Users\\Admin\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
-    "C:\\Users\\Admin\\.nuget\\packages\\system.text.encoding.codepages\\4.5.1\\system.text.encoding.codepages.4.5.1.nupkg.sha512"
+    "C:\\Users\\HP\\.nuget\\packages\\flurl\\3.0.0\\flurl.3.0.0.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\flurl.http\\3.0.0\\flurl.http.3.0.0.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.2\\microsoft.netcore.platforms.2.1.2.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\system.text.encoding.codepages\\4.5.1\\system.text.encoding.codepages.4.5.1.nupkg.sha512"
   ],
   "logs": []
 }
