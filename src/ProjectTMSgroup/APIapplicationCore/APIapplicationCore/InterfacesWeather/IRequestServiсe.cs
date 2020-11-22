@@ -1,27 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace APIapplicationCore
 {
-        /// <summary>
-        /// Service for working with requests.
-        /// </summary>
-        public interface IRequestService
+    /// <summary>
+    /// Service for working with requests.
+    /// </summary>
+    public interface IRequestService
     {
         /// <summary>
-        /// Get specific currency.
+        /// Get specific city.
         /// </summary>
-        /// <param name="code">Currency code.</param>
+        /// <param name="city">City woeid.</param>
         /// <returns>Currency.</returns>
-        Task<List<ExampleSearch>> GetExampleSearchAsync(string city);
+        Task<List<ModelsWeather.ExampleSearch>> GetExampleSearchAsync(string city);
 
         /// <summary>
-        /// Get all currencies.
+        /// Get city weather.
         /// </summary>
-        /// <returns>All currencies.</returns>
+        /// <returns>All weather for 6 days.</returns>
         Task<ConsolidatedWeatherResponse> GetConsolidatedWeather(int woeid);
-
     }
 }

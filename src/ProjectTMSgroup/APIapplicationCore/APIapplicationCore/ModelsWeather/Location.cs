@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace APIapplicationCore
 {
@@ -14,7 +13,7 @@ namespace APIapplicationCore
         public string applicable_date { get; set; }
         public double min_temp { get; set; }
         public double max_temp { get; set; }
-        public double the_temp { get; set; }
+        public double? the_temp { get; set; }
         public double wind_speed { get; set; }
         public double wind_direction { get; set; }
         public double air_pressure { get; set; }

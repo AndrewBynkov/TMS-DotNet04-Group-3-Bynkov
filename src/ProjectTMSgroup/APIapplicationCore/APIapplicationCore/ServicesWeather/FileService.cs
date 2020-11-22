@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Threading.Tasks;
@@ -7,7 +6,7 @@ using System.Threading.Tasks;
 namespace APIapplicationCore
 {
     /// <inheritdoc cref="IFileService"/>
-    public class FileService: IFileService
+    public class FileService : IFileService
     {
 
         public async Task WriteToFileAsync(string text)

@@ -11,14 +11,14 @@ namespace APIapplicationCore
 
     public class RequestServiсe : IRequestService
     {
-        public async Task<List<ExampleSearch>> GetExampleSearchAsync(string city)
+        public async Task<List<ModelsWeather.ExampleSearch>> GetExampleSearchAsync(string city)
         {
             try
             {
                 var response = await ConstantsWeather.Url
                     .AppendPathSegment("location/search/")
                     .SetQueryParam("query", city)
-                    .GetJsonAsync<List<ExampleSearch>>();
+                    .GetJsonAsync<List<ModelsWeather.ExampleSearch >> ();
                 return response;
             }
             catch (FlurlHttpTimeoutException)
@@ -58,7 +58,6 @@ namespace APIapplicationCore
             }
             return null;
         }
-      
     }
 }
 

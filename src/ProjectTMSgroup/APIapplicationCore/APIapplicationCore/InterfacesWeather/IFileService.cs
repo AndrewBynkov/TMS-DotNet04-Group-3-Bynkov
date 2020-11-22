@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 
 namespace APIapplicationCore
 {
-   public interface IFileService
+    public interface IFileService
     {
         /// <summary>
         /// Write to file.
