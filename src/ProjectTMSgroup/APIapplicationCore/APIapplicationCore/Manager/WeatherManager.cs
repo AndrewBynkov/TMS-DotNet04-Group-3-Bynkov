@@ -18,7 +18,7 @@ namespace APIapplicationCore
         public async Task FileExportAsync()
         {
             Console.WriteLine("Enter city:");
-            while (true)
+            do
             {
                 var nameCity = Console.ReadLine();
 
@@ -28,9 +28,9 @@ namespace APIapplicationCore
                 if (result != null)
                 {
                     Console.ForegroundColor = ConsoleColor.Green;
-                    Console.WriteLine(result.location_type+" "+ result.title);
+                    Console.WriteLine(result.location_type + " " + result.title);
                     Console.ResetColor();
-                    Console.WriteLine("GPS coordinates:"+ result.latt_long + "\nCity code:" + result.woeid);
+                    Console.WriteLine("GPS coordinates:" + result.latt_long + "\nCity code:" + result.woeid);
                     await GetWeatherDayAsync(result.woeid);
                     await GetWeatherWeekAsync(result.woeid);
                 }
@@ -39,6 +39,7 @@ namespace APIapplicationCore
                     Console.WriteLine("Try again...");
                 }
             }
+            while (Console.ReadKey().Key != ConsoleKey.Enter);
         }
         public async Task GetWeatherDayAsync(int woeid)
         {
