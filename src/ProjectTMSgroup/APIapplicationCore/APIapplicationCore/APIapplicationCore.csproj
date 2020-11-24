@@ -5,13 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="ConstantsConverter\" />
-    <Folder Include="InterfacesConverter\" />
-    <Folder Include="ModelsConverter\" />
-    <Folder Include="ServicesConverter\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Flurl" Version="3.0.0" />
     <PackageReference Include="Flurl.Http" Version="3.0.0" />
   </ItemGroup>

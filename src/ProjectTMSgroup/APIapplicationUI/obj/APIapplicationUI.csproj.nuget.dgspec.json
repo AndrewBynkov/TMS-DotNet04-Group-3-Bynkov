@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\Documents\\GitHub\\TMS-DotNet04-Group-3-Bynkov\\src\\ProjectTMSgroup\\APIapplicationUI\\APIapplicationUI.csproj": {}
+    "C:\\Users\\Admin\\source\\Repos\\TMS-DotNet04-Group-3-Bynkov\\src\\ProjectTMSgroup\\APIapplicationUI\\APIapplicationUI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\Documents\\GitHub\\TMS-DotNet04-Group-3-Bynkov\\src\\ProjectTMSgroup\\APIapplicationCore\\APIapplicationCore\\APIapplicationCore.csproj": {
+    "C:\\Users\\Admin\\source\\Repos\\TMS-DotNet04-Group-3-Bynkov\\src\\ProjectTMSgroup\\APIapplicationCore\\APIapplicationCore\\APIapplicationCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\Documents\\GitHub\\TMS-DotNet04-Group-3-Bynkov\\src\\ProjectTMSgroup\\APIapplicationCore\\APIapplicationCore\\APIapplicationCore.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\source\\Repos\\TMS-DotNet04-Group-3-Bynkov\\src\\ProjectTMSgroup\\APIapplicationCore\\APIapplicationCore\\APIapplicationCore.csproj",
         "projectName": "APIapplicationCore",
-        "projectPath": "C:\\Users\\HP\\Documents\\GitHub\\TMS-DotNet04-Group-3-Bynkov\\src\\ProjectTMSgroup\\APIapplicationCore\\APIapplicationCore\\APIapplicationCore.csproj",
-        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\Documents\\GitHub\\TMS-DotNet04-Group-3-Bynkov\\src\\ProjectTMSgroup\\APIapplicationCore\\APIapplicationCore\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\source\\Repos\\TMS-DotNet04-Group-3-Bynkov\\src\\ProjectTMSgroup\\APIapplicationCore\\APIapplicationCore\\APIapplicationCore.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\source\\Repos\\TMS-DotNet04-Group-3-Bynkov\\src\\ProjectTMSgroup\\APIapplicationCore\\APIapplicationCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -62,21 +62,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\HP\\Documents\\GitHub\\TMS-DotNet04-Group-3-Bynkov\\src\\ProjectTMSgroup\\APIapplicationUI\\APIapplicationUI.csproj": {
+    "C:\\Users\\Admin\\source\\Repos\\TMS-DotNet04-Group-3-Bynkov\\src\\ProjectTMSgroup\\APIapplicationUI\\APIapplicationUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\Documents\\GitHub\\TMS-DotNet04-Group-3-Bynkov\\src\\ProjectTMSgroup\\APIapplicationUI\\APIapplicationUI.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\source\\Repos\\TMS-DotNet04-Group-3-Bynkov\\src\\ProjectTMSgroup\\APIapplicationUI\\APIapplicationUI.csproj",
         "projectName": "APIapplicationUI",
-        "projectPath": "C:\\Users\\HP\\Documents\\GitHub\\TMS-DotNet04-Group-3-Bynkov\\src\\ProjectTMSgroup\\APIapplicationUI\\APIapplicationUI.csproj",
-        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\Documents\\GitHub\\TMS-DotNet04-Group-3-Bynkov\\src\\ProjectTMSgroup\\APIapplicationUI\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\source\\Repos\\TMS-DotNet04-Group-3-Bynkov\\src\\ProjectTMSgroup\\APIapplicationUI\\APIapplicationUI.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\source\\Repos\\TMS-DotNet04-Group-3-Bynkov\\src\\ProjectTMSgroup\\APIapplicationUI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -89,8 +89,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\HP\\Documents\\GitHub\\TMS-DotNet04-Group-3-Bynkov\\src\\ProjectTMSgroup\\APIapplicationCore\\APIapplicationCore\\APIapplicationCore.csproj": {
-                "projectPath": "C:\\Users\\HP\\Documents\\GitHub\\TMS-DotNet04-Group-3-Bynkov\\src\\ProjectTMSgroup\\APIapplicationCore\\APIapplicationCore\\APIapplicationCore.csproj"
+              "C:\\Users\\Admin\\source\\Repos\\TMS-DotNet04-Group-3-Bynkov\\src\\ProjectTMSgroup\\APIapplicationCore\\APIapplicationCore\\APIapplicationCore.csproj": {
+                "projectPath": "C:\\Users\\Admin\\source\\Repos\\TMS-DotNet04-Group-3-Bynkov\\src\\ProjectTMSgroup\\APIapplicationCore\\APIapplicationCore\\APIapplicationCore.csproj"
               }
             }
           }
@@ -118,7 +118,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
