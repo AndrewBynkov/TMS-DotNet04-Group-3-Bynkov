@@ -15,7 +15,7 @@ namespace APIapplicationUI
         {
             ///export.FileExportAsync().GetAwaiter().GetResult();
             exportConverter.GetResultsRequest();
-            exportConverter.ReturnCurrency();
+            exportConverter.ReturnSelectCurrency("EU");
         }
     }
 }

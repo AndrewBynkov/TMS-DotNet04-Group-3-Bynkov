@@ -1,8 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\src"
+    "\\src",
+    "\\src\\ProjectTMSgroup",
+    "\\src\\ProjectTMSgroup\\APIapplicationCore",
+    "\\src\\ProjectTMSgroup\\APIapplicationCore\\APIapplicationCore\\ServicesWeather",
+    "\\src\\ProjectTMSgroup\\APIapplicationUI"
   ],
-  "SelectedNode": "\\src",
+  "SelectedNode": "\\src\\ProjectTMSgroup\\APIapplicationCore\\APIapplicationCore.sln",
   "PreviewInSolutionExplorer": false
 }
