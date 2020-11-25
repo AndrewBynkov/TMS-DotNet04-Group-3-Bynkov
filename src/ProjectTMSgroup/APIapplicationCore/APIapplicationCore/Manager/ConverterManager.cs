@@ -3,7 +3,6 @@ using APIapplicationCore.ServicesConverter;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace APIapplicationCore.Manager
 {
@@ -22,22 +21,21 @@ namespace APIapplicationCore.Manager
 
         public void ReturnSelectCurrency(string inpCur)
         {
-            if (!ListOfCurrencyRates.Any(n => n.Cur_Abbreviation.StartsWith(inpCur)))
+            while (!ListOfCurrencyRates.Any(item => item.Cur_Abbreviation == inpCur))
             {
-                var result = ListOfCurrencyRates.Where(n => n.Cur_Abbreviation == inpCur);
-
-                foreach (var item in result)
-                {
-                    Console.WriteLine($"Currency abbriviation - {item.Cur_Abbreviation}\n" +
-                        $"ID - {item.Cur_ID}\n" +
-                        $"Currensy name - {item.Cur_Name}\n" +
-                        $"Rate - {item.Cur_OfficialRate}\n" +
-                        $"Date - {item.Date}");
-                }
+                Console.Write("Currency incorrect: ");
+                inpCur = Console.ReadLine().ToUpper();
             }
-            else
+
+            var result = ListOfCurrencyRates.Where(n => n.Cur_Abbreviation == inpCur);
+
+            foreach (var item in result)
             {
-                Console.WriteLine("not currensy");
+                Console.WriteLine($"\nCurrency abbriviation - {item.Cur_Abbreviation}\n" +
+                    $"ID - {item.Cur_ID}\n" +
+                    $"Currensy name - {item.Cur_Name}\n" +
+                    $"Rate - {item.Cur_OfficialRate}\n" +
+                    $"Date - {item.Date}");
             }
         }
     }

@@ -4,9 +4,11 @@
     "\\src",
     "\\src\\ProjectTMSgroup",
     "\\src\\ProjectTMSgroup\\APIapplicationCore",
-    "\\src\\ProjectTMSgroup\\APIapplicationCore\\APIapplicationCore\\ServicesWeather",
+    "\\src\\ProjectTMSgroup\\APIapplicationCore\\APIapplicationCore",
+    "\\src\\ProjectTMSgroup\\APIapplicationCore\\APIapplicationCore\\InterfacesConverter",
+    "\\src\\ProjectTMSgroup\\APIapplicationCore\\APIapplicationCore\\Manager",
     "\\src\\ProjectTMSgroup\\APIapplicationUI"
   ],
-  "SelectedNode": "\\src\\ProjectTMSgroup\\APIapplicationCore\\APIapplicationCore.sln",
+  "SelectedNode": "\\LICENSE",
   "PreviewInSolutionExplorer": false
 }

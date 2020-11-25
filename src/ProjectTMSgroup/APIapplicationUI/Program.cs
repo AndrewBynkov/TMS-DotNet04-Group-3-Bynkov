@@ -3,6 +3,7 @@ using APIapplicationCore.InterfacesConverter;
 using APIapplicationCore.Manager;
 using APIapplicationCore.ServicesConverter;
 using System;
+using System.Threading.Tasks;
 
 namespace APIapplicationUI
 {
@@ -13,9 +14,23 @@ namespace APIapplicationUI
 
         static void Main(string[] args)
         {
-            ///export.FileExportAsync().GetAwaiter().GetResult();
+            StartWeather();
+            StartConverter();
+        }
+
+        public static void StartWeather()
+        {
+            export.FileExportAsync().GetAwaiter().GetResult();
+        }
+
+        public static void StartConverter()
+        {
+
+            Console.Write("\nEnter the name of the currency to get the rate (USD/EUR/RUB): ");
+            string currencyUserInput = Console.ReadLine();
+
             exportConverter.GetResultsRequest();
-            exportConverter.ReturnSelectCurrency("EU");
+            exportConverter.ReturnSelectCurrency(currencyUserInput);
         }
     }
 }
