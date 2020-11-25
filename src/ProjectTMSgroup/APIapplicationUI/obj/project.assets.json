@@ -239,7 +239,9 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "APIapplicationCore >= 1.0.0"
+      "APIapplicationCore >= 1.0.0",
+      "Flurl >= 3.0.0",
+      "Flurl.Http >= 3.0.0"
     ]
   },
   "packageFolders": {
@@ -284,6 +286,16 @@
     "frameworks": {
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
+        "dependencies": {
+          "Flurl": {
+            "target": "Package",
+            "version": "[3.0.0, )"
+          },
+          "Flurl.Http": {
+            "target": "Package",
+            "version": "[3.0.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -302,5 +314,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\Admin\\source\\Repos\\TMS-DotNet04-Group-3-Bynkov\\src\\ProjectTMSgroup\\APIapplicationUI\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

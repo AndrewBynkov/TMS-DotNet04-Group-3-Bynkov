@@ -9,6 +9,9 @@ namespace APIapplicationCore.Manager
 {
     public class ConverterManager
     {
+        /// <summary>
+        /// List of currensy info (ID, rate, name, etc.)
+        /// </summary>
         public IList<ModelsConverter.ModelsConverter> ListOfCurrencyRates { get; set; }
 
         public void GetResultsRequest()
@@ -17,17 +20,25 @@ namespace APIapplicationCore.Manager
             ListOfCurrencyRates = resultRequest.RequestServerAsync().GetAwaiter().GetResult();
         }
 
-        public void ReturnCurrency()
+        public void ReturnSelectCurrency(string inpCur)
         {
-            var modelsConverter = new ModelsConverter.ModelsConverter();
-
-            var result = ListOfCurrencyRates.ToList().Select(n => n.Cur_Abbreviation = "BYN");
-            foreach (var item in result)
+            if (!ListOfCurrencyRates.Any(n => n.Cur_Abbreviation.StartsWith(inpCur)))
             {
-                Console.WriteLine();
-            }
+                var result = ListOfCurrencyRates.Where(n => n.Cur_Abbreviation == inpCur);
 
-            Console.ReadKey();
+                foreach (var item in result)
+                {
+                    Console.WriteLine($"Currency abbriviation - {item.Cur_Abbreviation}\n" +
+                        $"ID - {item.Cur_ID}\n" +
+                        $"Currensy name - {item.Cur_Name}\n" +
+                        $"Rate - {item.Cur_OfficialRate}\n" +
+                        $"Date - {item.Date}");
+                }
+            }
+            else
+            {
+                Console.WriteLine("not currensy");
+            }
         }
     }
 }

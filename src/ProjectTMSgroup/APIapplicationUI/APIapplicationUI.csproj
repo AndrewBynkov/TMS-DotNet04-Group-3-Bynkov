@@ -6,6 +6,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Flurl" Version="3.0.0" />
+    <PackageReference Include="Flurl.Http" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\APIapplicationCore\APIapplicationCore\APIapplicationCore.csproj" />
   </ItemGroup>
 

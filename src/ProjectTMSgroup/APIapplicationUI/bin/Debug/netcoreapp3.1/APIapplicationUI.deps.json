@@ -8,7 +8,9 @@
     ".NETCoreApp,Version=v3.1": {
       "APIapplicationUI/1.0.0": {
         "dependencies": {
-          "APIapplicationCore": "1.0.0"
+          "APIapplicationCore": "1.0.0",
+          "Flurl": "3.0.0",
+          "Flurl.Http": "3.0.0"
         },
         "runtime": {
           "APIapplicationUI.dll": {}
