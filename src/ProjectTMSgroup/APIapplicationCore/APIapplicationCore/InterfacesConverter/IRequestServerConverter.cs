@@ -7,6 +7,8 @@ namespace APIapplicationCore.InterfacesConverter
 {
     public interface IRequestServerConverter
     {
-        public Task<IList<ModelsConverter.ModelsConverter>> RequestServerAsync();
+        public Task<IList<ModelsConverter.ModelsConverter>> RequestServerAsyncGetRateToday();
+
+        public Task<IList<ModelsConverter.ModelsConverter>> RequestServerAsyncGetRateYesterday();
     }
 }

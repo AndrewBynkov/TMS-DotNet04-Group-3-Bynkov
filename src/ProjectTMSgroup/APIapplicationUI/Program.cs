@@ -14,7 +14,7 @@ namespace APIapplicationUI
 
         static void Main(string[] args)
         {
-            StartWeather();
+            ///StartWeather();
             StartConverter();
         }
 
@@ -28,9 +28,10 @@ namespace APIapplicationUI
 
             Console.Write("\nEnter the name of the currency to get the rate (USD/EUR/RUB): ");
             string currencyUserInput = Console.ReadLine();
-
             exportConverter.GetResultsRequest();
-            exportConverter.ReturnSelectCurrency(currencyUserInput);
+            exportConverter.GetInfoSelectUserCurrencyToday(currencyUserInput);
+            exportConverter.GetInfoSelectUserCurrencyYesturday("RUB");
+            exportConverter.GetInfo();
         }
     }
 }
