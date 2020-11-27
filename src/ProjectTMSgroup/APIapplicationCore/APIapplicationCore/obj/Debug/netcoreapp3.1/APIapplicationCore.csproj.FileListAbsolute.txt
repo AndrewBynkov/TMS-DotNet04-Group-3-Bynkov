@@ -20,8 +20,8 @@ C:\Users\Андрей\Source\Repos\TMS-DotNet04-Group-3-Bynkov\src\ProjectTMSgro
 C:\Users\Андрей\Source\Repos\TMS-DotNet04-Group-3-Bynkov\src\ProjectTMSgroup\APIapplicationCore\APIapplicationCore\bin\Debug\netcoreapp3.1\APIapplicationCore.deps.json
 C:\Users\Андрей\Source\Repos\TMS-DotNet04-Group-3-Bynkov\src\ProjectTMSgroup\APIapplicationCore\APIapplicationCore\bin\Debug\netcoreapp3.1\APIapplicationCore.dll
 C:\Users\Андрей\Source\Repos\TMS-DotNet04-Group-3-Bynkov\src\ProjectTMSgroup\APIapplicationCore\APIapplicationCore\bin\Debug\netcoreapp3.1\APIapplicationCore.pdb
-C:\Users\Андрей\Source\Repos\TMS-DotNet04-Group-3-Bynkov\src\ProjectTMSgroup\APIapplicationCore\APIapplicationCore\obj\Debug\netcoreapp3.1\APIapplicationCore.csprojAssemblyReference.cache
 C:\Users\Андрей\Source\Repos\TMS-DotNet04-Group-3-Bynkov\src\ProjectTMSgroup\APIapplicationCore\APIapplicationCore\obj\Debug\netcoreapp3.1\APIapplicationCore.AssemblyInfoInputs.cache
 C:\Users\Андрей\Source\Repos\TMS-DotNet04-Group-3-Bynkov\src\ProjectTMSgroup\APIapplicationCore\APIapplicationCore\obj\Debug\netcoreapp3.1\APIapplicationCore.AssemblyInfo.cs
 C:\Users\Андрей\Source\Repos\TMS-DotNet04-Group-3-Bynkov\src\ProjectTMSgroup\APIapplicationCore\APIapplicationCore\obj\Debug\netcoreapp3.1\APIapplicationCore.csproj.CoreCompileInputs.cache
 C:\Users\Admin\source\Repos\TMS-DotNet04-Group-3-Bynkov\src\ProjectTMSgroup\APIapplicationCore\APIapplicationCore\obj\Debug\netcoreapp3.1\APIapplicationCore.csprojAssemblyReference.cache
+C:\Users\Андрей\Source\Repos\TMS-DotNet04-Group-3-Bynkov\src\ProjectTMSgroup\APIapplicationCore\APIapplicationCore\obj\Debug\netcoreapp3.1\APIapplicationCore.csprojAssemblyReference.cache

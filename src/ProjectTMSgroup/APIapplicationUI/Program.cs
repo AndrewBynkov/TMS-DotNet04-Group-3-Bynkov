@@ -31,6 +31,7 @@ namespace APIapplicationUI
             exportConverter.GetResultsRequest();
             exportConverter.GetInfoSelectUserCurrencyToday(currencyUserInput);
             exportConverter.GetInfoSelectUserCurrencyYesturday("RUB");
+            exportConverter.CourseDynamics();
             exportConverter.GetInfo();
         }
     }

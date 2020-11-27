@@ -9,7 +9,11 @@ namespace APIapplicationCore.Manager
 {
     public class ConverterManager
     {
-        public string InputCur { get; set; }
+        public Func<string, IEnumerable<ModelsConverter.ModelsConverter>> start;
+
+        private decimal _rateCoursToday;
+
+        private decimal _rateCoursYesterday;
 
         /// <summary>
         /// Result of request List of currensy info  (ID, rate, name, etc.)
@@ -37,10 +41,9 @@ namespace APIapplicationCore.Manager
             {
                 Console.Write("Currency incorrect: ");
                 inpCur = Console.ReadLine().ToUpper();
-                InputCur = inpCur;
             }
 
-          return ListOfCurrencyUserSelectRatesToday = ListOfCurrencyRatesToday
+          return ListOfCurrencyUserSelectRatesToday = ListOfCurrencyRatesToday.ToList()
                 .Where(item => item.Cur_Abbreviation == inpCur);
         }
 
@@ -48,6 +51,12 @@ namespace APIapplicationCore.Manager
         {
            return ListOfCurrencyUserSelectRatesYesterday = ListOfCurrencyRatesYesterday
                 .Where(item => item.Cur_Abbreviation == inpCur);
+        }
+
+        public void CourseDynamics()
+        {
+            var res = Convert.ToDecimal((ListOfCurrencyUserSelectRatesToday.ToList().Select(x => x.Cur_OfficialRate)).ToString());
+            var res2 = ListOfCurrencyUserSelectRatesYesterday.ToList().Select(x => x.Cur_OfficialRate);
         }
 
         public void GetInfo()
