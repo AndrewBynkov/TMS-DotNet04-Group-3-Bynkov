@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace APIapplicationCore.ServicesConverter
 {
-    public class RequestServiceConverter : IRequestServerConverter
+    public class ConverterManager : IRequestServerConverter
     {
         public async Task<IList<ModelsConverter.ModelsConverter>> RequestServerAsyncGetRateToday()
         {
