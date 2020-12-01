@@ -32,7 +32,7 @@ namespace APIapplicationCore.ServicesConverter
             return await CommonConverterUrl.UrlConverter
                 .AppendPathSegments("/api/exrates/rates/USD")
                 .SetQueryParams(new { parammode = 2 })
-                .GetJsonAsync<List<ModelsConverter.ModelsConverter>>();
+                .GetJsonAsync<IList<ModelsConverter.ModelsConverter>>();
         }
 
         public async Task<IList<ModelsConverter.ModelsConverter>> RequestServerAsyncGetRateEUR()

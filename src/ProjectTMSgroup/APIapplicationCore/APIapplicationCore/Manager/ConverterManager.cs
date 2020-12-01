@@ -17,7 +17,7 @@ namespace APIapplicationCore.Manager
             _iRequestServerConverter = new RequestServiceConverter();
         }
 
-        public UserInput userInput = new UserInput();
+        public readonly UserInput userInput = new UserInput();
 
         public decimal RateCoursToday { get; set; }
 
