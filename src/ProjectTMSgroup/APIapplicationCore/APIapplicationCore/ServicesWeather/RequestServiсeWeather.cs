@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace APIapplicationCore
 {
-    /// <inheritdoc cref="IRequestedServise"/>
+    /// <inheritdoc cref="IRequestedServiseWeather"/>
 
-    public class RequestServiсe : IRequestService
+    public class RequestServiсeWeather : IRequestServiceWeather
     {
         public async Task<List<ModelsWeather.ExampleSearch>> GetExampleSearchAsync(string city)
         {
