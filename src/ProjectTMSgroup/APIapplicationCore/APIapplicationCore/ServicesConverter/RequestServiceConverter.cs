@@ -19,7 +19,7 @@ namespace APIapplicationCore.ServicesConverter
                .GetJsonAsync<IList<ModelsConverter.ModelsConverter>>();
         }
 
-        public async Task<IList<ModelsConverter.ModelsConverter>> RequestServerAsyncGetRateYesterday(string userInputDate)
+        public async Task<IList<ModelsConverter.ModelsConverter>> RequestServerAsyncGetRateOnTheDate(string userInputDate)
         {
             return await CommonConverterUrl.UrlConverter
                .AppendPathSegments("/api/exrates/rates")

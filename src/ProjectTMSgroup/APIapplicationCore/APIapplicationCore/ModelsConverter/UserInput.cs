@@ -1,6 +1,7 @@
 ﻿using APIapplicationCore.Manager;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,9 +11,9 @@ namespace APIapplicationCore.ModelsConverter
     {
         public string CurrencyNameUserInput { get; set; }
 
-        public string DateUserInput { get; set; }
+        public string DateUserInput { get; private set; }
 
-        public void UserInp()
+        public async Task UserInpAsync()
         {
             Console.Write("Enter the dates(YY-MM-DD): ");
             DateUserInput = Console.ReadLine();

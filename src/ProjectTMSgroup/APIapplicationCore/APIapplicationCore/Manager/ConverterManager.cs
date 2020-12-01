@@ -17,7 +17,7 @@ namespace APIapplicationCore.Manager
             _iRequestServerConverter = new RequestServiceConverter();
         }
 
-        private readonly UserInput userInput = new UserInput();
+        public UserInput userInput = new UserInput();
 
         public decimal RateCoursToday { get; set; }
 
@@ -41,12 +41,13 @@ namespace APIapplicationCore.Manager
         /// <summary>
         /// Currency info on the input date (user select)
         /// </summary>
-        public List<ModelsConverter.ModelsConverter> ListOfCurrencyRatesUserSelectYesterday { get; set; }
+        public List<ModelsConverter.ModelsConverter> ListOfCurrencyRatesUserSelectOnTheDate { get; set; }
 
         public async Task GetResultsRequestAsync()
         {
+            await userInput.UserInpAsync();
             ListOfCurrencyRatesToday = await _iRequestServerConverter.RequestServerAsyncGetRateToday();
-            ListOfCurrencyRatesOnTheDate = await _iRequestServerConverter.RequestServerAsyncGetRateYesterday(userInput.DateUserInput);
+            ListOfCurrencyRatesOnTheDate = await _iRequestServerConverter.RequestServerAsyncGetRateOnTheDate(userInput.DateUserInput);
             GetInfoSelectUserCurrencyToday();
             GetInfoSelectUserCurrencyYesturday();
             CourseDynamics();
@@ -54,7 +55,6 @@ namespace APIapplicationCore.Manager
 
         public void GetInfoSelectUserCurrencyToday()
         {
-            userInput.UserInp();
             while (!ListOfCurrencyRatesToday.Any(item => item.Cur_Abbreviation == userInput.CurrencyNameUserInput))
             {
                 Console.Write("Currency incorrect: ");
@@ -67,7 +67,7 @@ namespace APIapplicationCore.Manager
 
         public void GetInfoSelectUserCurrencyYesturday()
         {
-            ListOfCurrencyRatesUserSelectYesterday = ListOfCurrencyRatesOnTheDate.ToList()
+            ListOfCurrencyRatesUserSelectOnTheDate = ListOfCurrencyRatesOnTheDate.ToList()
                  .Where(item => item.Cur_Abbreviation == userInput.CurrencyNameUserInput).ToList();
         }
 
@@ -76,6 +76,30 @@ namespace APIapplicationCore.Manager
             RateCoursToday = ListOfCurrencyRatesUserSelectToday
                 .Select(x => (decimal)x.Cur_OfficialRate)
                 .ElementAt(0);
+
+            RateCourseOnTheDate = ListOfCurrencyRatesUserSelectOnTheDate
+                .Select(x => (decimal)x.Cur_OfficialRate)
+                .ElementAt(0);
+
+            if (RateCoursToday - RateCourseOnTheDate < 0)
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine($"\nExchange rate falls    -{RateCoursToday - RateCourseOnTheDate}");
+                Console.WriteLine("-------------------------------");
+                Console.WriteLine($"{userInput.DateUserInput}                     {RateCourseOnTheDate}");
+                Console.WriteLine($"{DateTime.Now.ToString("yyyy-dd-MM")}                   {RateCoursToday}");
+                Console.ResetColor();
+            }
+
+            if (RateCoursToday - RateCourseOnTheDate > 0)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine($"\nThe exchange rate is growing! +{RateCoursToday - RateCourseOnTheDate}");
+                Console.WriteLine("-------------------------------");
+                Console.WriteLine($"{userInput.DateUserInput}                      {RateCourseOnTheDate}");
+                Console.WriteLine($"{DateTime.Now.ToString("yyyy-dd-MM")}                     {RateCoursToday}");
+                Console.ResetColor();
+            }
         }
     }
 }

@@ -225,19 +225,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "C:\\Users\\Андрей\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\source\\Repos\\TMS-DotNet04-Group-3-Bynkov\\src\\ProjectTMSgroup\\APIapplicationCore\\APIapplicationCore\\APIapplicationCore.csproj",
+      "projectUniqueName": "C:\\Users\\Андрей\\Source\\Repos\\TMS-DotNet04-Group-3-Bynkov\\src\\ProjectTMSgroup\\APIapplicationCore\\APIapplicationCore\\APIapplicationCore.csproj",
       "projectName": "APIapplicationCore",
-      "projectPath": "C:\\Users\\Admin\\source\\Repos\\TMS-DotNet04-Group-3-Bynkov\\src\\ProjectTMSgroup\\APIapplicationCore\\APIapplicationCore\\APIapplicationCore.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\source\\Repos\\TMS-DotNet04-Group-3-Bynkov\\src\\ProjectTMSgroup\\APIapplicationCore\\APIapplicationCore\\obj\\",
+      "projectPath": "C:\\Users\\Андрей\\Source\\Repos\\TMS-DotNet04-Group-3-Bynkov\\src\\ProjectTMSgroup\\APIapplicationCore\\APIapplicationCore\\APIapplicationCore.csproj",
+      "packagesPath": "C:\\Users\\Андрей\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Андрей\\Source\\Repos\\TMS-DotNet04-Group-3-Bynkov\\src\\ProjectTMSgroup\\APIapplicationCore\\APIapplicationCore\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Андрей\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -249,7 +249,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -261,7 +260,6 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Flurl": {
             "target": "Package",
@@ -287,7 +285,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

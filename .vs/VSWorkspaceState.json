@@ -5,10 +5,9 @@
     "\\src\\ProjectTMSgroup",
     "\\src\\ProjectTMSgroup\\APIapplicationCore",
     "\\src\\ProjectTMSgroup\\APIapplicationCore\\APIapplicationCore",
-    "\\src\\ProjectTMSgroup\\APIapplicationCore\\APIapplicationCore\\ServicesConverter",
     "\\src\\ProjectTMSgroup\\APIapplicationCore\\APIapplicationCore\\ServicesWeather",
     "\\src\\ProjectTMSgroup\\APIapplicationUI"
   ],
-  "SelectedNode": "\\src\\ProjectTMSgroup\\APIapplicationCore\\APIapplicationCore\\ServicesConverter\\ServiceConverter.cs",
+  "SelectedNode": "\\src\\ProjectTMSgroup\\APIapplicationCore\\APIapplicationCore\\ServicesConverter",
   "PreviewInSolutionExplorer": false
 }
