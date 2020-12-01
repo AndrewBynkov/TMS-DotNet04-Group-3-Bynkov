@@ -9,11 +9,11 @@ namespace APIapplicationCore
     /// </summary>
     public class WeatherManager
     {
-        private readonly IRequestService _requestService;
+        private readonly IRequestServiceWeather _requestService;
 
         public WeatherManager()
         {
-            _requestService = new RequestServiсe();
+            _requestService = new RequestServiсeWeather();
         }
         public async Task FileExportAsync()
         {

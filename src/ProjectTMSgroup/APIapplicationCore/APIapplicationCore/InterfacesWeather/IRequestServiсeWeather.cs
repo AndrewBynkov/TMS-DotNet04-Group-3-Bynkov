@@ -6,7 +6,7 @@ namespace APIapplicationCore
     /// <summary>
     /// Service for working with requests.
     /// </summary>
-    public interface IRequestService
+    public interface IRequestServiceWeather
     {
         /// <summary>
         /// Get specific city.
