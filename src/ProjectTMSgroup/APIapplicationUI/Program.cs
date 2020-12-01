@@ -1,6 +1,7 @@
 ﻿using APIapplicationCore;
 using APIapplicationCore.InterfacesConverter;
 using APIapplicationCore.Manager;
+using APIapplicationCore.ModelsConverter;
 using APIapplicationCore.ServicesConverter;
 using System;
 using System.Threading.Tasks;
@@ -10,7 +11,8 @@ namespace APIapplicationUI
     class Program
     {
         private static readonly WeatherManager export = new WeatherManager();
-        private static readonly ConverterManager exportConverter = new ConverterManager();
+        private static readonly ConverterManager convererManager = new ConverterManager();
+        private static readonly MajorCurrencies major = new MajorCurrencies();
 
         static void Main(string[] args)
         {
@@ -25,14 +27,9 @@ namespace APIapplicationUI
 
         public static void StartConverter()
         {
-
-            Console.Write("\nEnter the name of the currency to get the rate (USD/EUR/RUB): ");
-            string currencyUserInput = Console.ReadLine();
-            exportConverter.GetResultsRequest();
-            exportConverter.GetInfoSelectUserCurrencyToday(currencyUserInput);
-            exportConverter.GetInfoSelectUserCurrencyYesturday("RUB");
-            exportConverter.CourseDynamics();
-            exportConverter.GetInfo();
+            convererManager.GetResultsRequestAsync().GetAwaiter().GetResult();
+            major.GetResultsRequestAsyncMajorCurrencies();
+            major.ScreenControllerMainCurrenciesAsync();
         }
     }
 }

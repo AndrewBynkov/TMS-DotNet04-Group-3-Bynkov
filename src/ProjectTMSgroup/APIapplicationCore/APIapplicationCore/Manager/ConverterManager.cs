@@ -1,4 +1,5 @@
 ﻿using APIapplicationCore.InterfacesConverter;
+using APIapplicationCore.ModelsConverter;
 using APIapplicationCore.ServicesConverter;
 using System;
 using System.Collections.Generic;
@@ -9,78 +10,72 @@ namespace APIapplicationCore.Manager
 {
     public class ConverterManager
     {
-        public Func<string, IEnumerable<ModelsConverter.ModelsConverter>> start;
+        private readonly IRequestServerConverter _iRequestServerConverter;
 
-        private decimal _rateCoursToday;
+        public ConverterManager()
+        {
+            _iRequestServerConverter = new RequestServiceConverter();
+        }
 
-        private decimal _rateCoursYesterday;
+        private readonly UserInput userInput = new UserInput();
+
+        public decimal RateCoursToday { get; set; }
+
+        public decimal RateCourseOnTheDate{ get; set; }
 
         /// <summary>
         /// Result of request List of currensy info  (ID, rate, name, etc.)
         /// </summary>
         public IList<ModelsConverter.ModelsConverter> ListOfCurrencyRatesToday { get; set; }
 
-        public IList<ModelsConverter.ModelsConverter> ListOfCurrencyRatesYesterday { get; set; }
+        /// <summary>
+        /// Result of request List of currensy info on the input date (ID, rate, name, etc.)
+        /// </summary>
+        public IList<ModelsConverter.ModelsConverter> ListOfCurrencyRatesOnTheDate { get; set; }
 
-        public IEnumerable<ModelsConverter.ModelsConverter> ListOfCurrencyUserSelectRatesToday { get; set; } =
-            new List<ModelsConverter.ModelsConverter>();
+        /// <summary>
+        /// Currency info (user select)
+        /// </summary>
+        public List<ModelsConverter.ModelsConverter> ListOfCurrencyRatesUserSelectToday { get; set; }
 
-        public IEnumerable<ModelsConverter.ModelsConverter> ListOfCurrencyUserSelectRatesYesterday { get; set; } =
-            new List<ModelsConverter.ModelsConverter>();
+        /// <summary>
+        /// Currency info on the input date (user select)
+        /// </summary>
+        public List<ModelsConverter.ModelsConverter> ListOfCurrencyRatesUserSelectYesterday { get; set; }
 
-        public void GetResultsRequest()
+        public async Task GetResultsRequestAsync()
         {
-            IRequestServerConverter resultRequest = new ServiceConverter();
-            ListOfCurrencyRatesToday = resultRequest.RequestServerAsyncGetRateToday().GetAwaiter().GetResult();
-            ListOfCurrencyRatesYesterday = resultRequest.RequestServerAsyncGetRateYesterday().GetAwaiter().GetResult();
+            ListOfCurrencyRatesToday = await _iRequestServerConverter.RequestServerAsyncGetRateToday();
+            ListOfCurrencyRatesOnTheDate = await _iRequestServerConverter.RequestServerAsyncGetRateYesterday(userInput.DateUserInput);
+            GetInfoSelectUserCurrencyToday();
+            GetInfoSelectUserCurrencyYesturday();
+            CourseDynamics();
         }
 
-        public IEnumerable<ModelsConverter.ModelsConverter> GetInfoSelectUserCurrencyToday(string inpCur)
+        public void GetInfoSelectUserCurrencyToday()
         {
-            while (!ListOfCurrencyRatesToday.Any(item => item.Cur_Abbreviation == inpCur))
+            userInput.UserInp();
+            while (!ListOfCurrencyRatesToday.Any(item => item.Cur_Abbreviation == userInput.CurrencyNameUserInput))
             {
                 Console.Write("Currency incorrect: ");
-                inpCur = Console.ReadLine().ToUpper();
+                userInput.CurrencyNameUserInput = Console.ReadLine().ToUpper();
             }
 
-          return ListOfCurrencyUserSelectRatesToday = ListOfCurrencyRatesToday.ToList()
-                .Where(item => item.Cur_Abbreviation == inpCur);
+            ListOfCurrencyRatesUserSelectToday = ListOfCurrencyRatesToday.ToList()
+                  .Where(item => item.Cur_Abbreviation == userInput.CurrencyNameUserInput).ToList();
         }
 
-        public IEnumerable<ModelsConverter.ModelsConverter> GetInfoSelectUserCurrencyYesturday(string inpCur)
+        public void GetInfoSelectUserCurrencyYesturday()
         {
-           return ListOfCurrencyUserSelectRatesYesterday = ListOfCurrencyRatesYesterday
-                .Where(item => item.Cur_Abbreviation == inpCur);
+            ListOfCurrencyRatesUserSelectYesterday = ListOfCurrencyRatesOnTheDate.ToList()
+                 .Where(item => item.Cur_Abbreviation == userInput.CurrencyNameUserInput).ToList();
         }
 
         public void CourseDynamics()
         {
-            var res = Convert.ToDecimal((ListOfCurrencyUserSelectRatesToday.ToList().Select(x => x.Cur_OfficialRate)).ToString());
-            var res2 = ListOfCurrencyUserSelectRatesYesterday.ToList().Select(x => x.Cur_OfficialRate);
-        }
-
-        public void GetInfo()
-        {
-            foreach (var item in ListOfCurrencyUserSelectRatesToday)
-            {
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine($"Exchange rate on the date - {item.Date}");
-                Console.ResetColor();
-                Console.WriteLine($"Cur abr - {item.Cur_Abbreviation}");
-                Console.WriteLine($"Cur name - {item.Cur_Name}");
-                Console.WriteLine($"Cur rate - {item.Cur_OfficialRate}\n");
-            }
-
-            foreach (var item in ListOfCurrencyUserSelectRatesYesterday)
-            {
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine($"Exchange rate on the date - {item.Date}");
-                Console.ResetColor();
-                Console.WriteLine($"Cur abr - {item.Cur_Abbreviation}");
-                Console.WriteLine($"Cur name - {item.Cur_Name}");
-                Console.WriteLine($"Cur rate - {item.Cur_OfficialRate}");
-            }
-
+            RateCoursToday = ListOfCurrencyRatesUserSelectToday
+                .Select(x => (decimal)x.Cur_OfficialRate)
+                .ElementAt(0);
         }
     }
 }

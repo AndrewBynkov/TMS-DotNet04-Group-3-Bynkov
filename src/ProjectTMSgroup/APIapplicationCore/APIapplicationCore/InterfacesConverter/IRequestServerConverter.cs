@@ -9,6 +9,12 @@ namespace APIapplicationCore.InterfacesConverter
     {
         public Task<IList<ModelsConverter.ModelsConverter>> RequestServerAsyncGetRateToday();
 
-        public Task<IList<ModelsConverter.ModelsConverter>> RequestServerAsyncGetRateYesterday();
+        public Task<IList<ModelsConverter.ModelsConverter>> RequestServerAsyncGetRateYesterday(string date);
+
+        public Task<IList<ModelsConverter.ModelsConverter>> RequestServerAsyncGetRateUSD();
+
+        public Task<IList<ModelsConverter.ModelsConverter>> RequestServerAsyncGetRateEUR();
+
+        public Task<IList<ModelsConverter.ModelsConverter>> RequestServerAsyncGetRateRUB();
     }
 }
