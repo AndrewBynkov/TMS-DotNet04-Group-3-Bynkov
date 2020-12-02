@@ -225,16 +225,11 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
     "C:\\Users\\Admin\\.nuget\\packages\\": {}
-=======
-    "C:\\Users\\HP\\.nuget\\packages\\": {}
->>>>>>> dev-Sinkevich-news
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Admin\\source\\Repos\\TMS-DotNet04-Group-3-Bynkov\\src\\ProjectTMSgroup\\APIapplicationCore\\APIapplicationCore\\APIapplicationCore.csproj",
       "projectName": "APIapplicationCore",
       "projectPath": "C:\\Users\\Admin\\source\\Repos\\TMS-DotNet04-Group-3-Bynkov\\src\\ProjectTMSgroup\\APIapplicationCore\\APIapplicationCore\\APIapplicationCore.csproj",
@@ -243,16 +238,6 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-      "projectUniqueName": "C:\\Users\\HP\\Documents\\GitHub\\TMS-DotNet04-Group-3-Bynkov\\src\\ProjectTMSgroup\\APIapplicationCore\\APIapplicationCore\\APIapplicationCore.csproj",
-      "projectName": "APIapplicationCore",
-      "projectPath": "C:\\Users\\HP\\Documents\\GitHub\\TMS-DotNet04-Group-3-Bynkov\\src\\ProjectTMSgroup\\APIapplicationCore\\APIapplicationCore\\APIapplicationCore.csproj",
-      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Documents\\GitHub\\TMS-DotNet04-Group-3-Bynkov\\src\\ProjectTMSgroup\\APIapplicationCore\\APIapplicationCore\\obj\\",
-      "projectStyle": "PackageReference",
-      "configFilePaths": [
-        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> dev-Sinkevich-news
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -305,5 +290,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\Admin\\source\\Repos\\TMS-DotNet04-Group-3-Bynkov\\src\\ProjectTMSgroup\\APIapplicationCore\\APIapplicationCore\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

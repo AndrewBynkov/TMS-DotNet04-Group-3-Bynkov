@@ -1,5 +1,7 @@
 ﻿using APIapplicationCore;
+using APIapplicationCore.Manager;
 using APIapplicationCore.ModelsConverter;
+using System;
 
 namespace APIapplicationUI
 {
@@ -8,7 +10,6 @@ namespace APIapplicationUI
         private static readonly UserInput userInput = new UserInput();
         private static readonly APIapplicationCore.Manager.ConverterManager converterManager = new APIapplicationCore.Manager.ConverterManager(userInput);
         private static readonly WeatherManager export = new WeatherManager();
-        private static readonly ConverterManager exportConverter = new ConverterManager();
         private static readonly NewsManager exportNews = new NewsManager();
 
 
@@ -28,7 +29,7 @@ namespace APIapplicationUI
 
                     case 2:
                         {
-                            //StartConverter();
+                            StartConverter();
                         }
                         break;
 
@@ -53,9 +54,6 @@ namespace APIapplicationUI
                         break;
                 }
                 Console.WriteLine();
-                //StartWeather();
-                //StartConverter();
-                //StartNews();
             }
         }
 

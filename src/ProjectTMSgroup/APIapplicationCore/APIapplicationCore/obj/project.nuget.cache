@@ -1,6 +1,5 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "JI+PItNVmYpDUtbDV9KuvPOUIIY/oMf4XZJdUj+GnK8sh5eB18TazslutXZLcV4FXuERT8chvLaq9b1mkBT/WQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Admin\\source\\Repos\\TMS-DotNet04-Group-3-Bynkov\\src\\ProjectTMSgroup\\APIapplicationCore\\APIapplicationCore\\APIapplicationCore.csproj",
@@ -11,18 +10,13 @@
     "C:\\Users\\Admin\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.text.encoding.codepages\\4.5.1\\system.text.encoding.codepages.4.5.1.nupkg.sha512"
-=======
-  "dgSpecHash": "QTESdhgoFQzZinhz0sfUetSULo9zClqau/QviiEUyVzhmIQLux/J2/rta8IHVXSSIR5SkegdbC5YcC5FFfC80w==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\HP\\Documents\\GitHub\\TMS-DotNet04-Group-3-Bynkov\\src\\ProjectTMSgroup\\APIapplicationCore\\APIapplicationCore\\APIapplicationCore.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\HP\\.nuget\\packages\\flurl\\3.0.0\\flurl.3.0.0.nupkg.sha512",
-    "C:\\Users\\HP\\.nuget\\packages\\flurl.http\\3.0.0\\flurl.http.3.0.0.nupkg.sha512",
-    "C:\\Users\\HP\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.2\\microsoft.netcore.platforms.2.1.2.nupkg.sha512",
-    "C:\\Users\\HP\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
-    "C:\\Users\\HP\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
-    "C:\\Users\\HP\\.nuget\\packages\\system.text.encoding.codepages\\4.5.1\\system.text.encoding.codepages.4.5.1.nupkg.sha512"
->>>>>>> dev-Sinkevich-news
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\Admin\\source\\Repos\\TMS-DotNet04-Group-3-Bynkov\\src\\ProjectTMSgroup\\APIapplicationCore\\APIapplicationCore\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
