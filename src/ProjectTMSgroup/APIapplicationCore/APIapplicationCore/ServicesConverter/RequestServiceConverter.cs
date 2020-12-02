@@ -2,9 +2,7 @@
 using APIapplicationCore.InterfacesConverter;
 using Flurl;
 using Flurl.Http;
-using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace APIapplicationCore.ServicesConverter

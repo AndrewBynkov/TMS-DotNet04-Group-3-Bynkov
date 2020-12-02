@@ -19,10 +19,16 @@ namespace APIapplicationCore.Manager
             _userInput = userInput;
         }
 
-        public readonly UserInput _userInput;
+        private readonly UserInput _userInput;
 
+        /// <summary>
+        /// Rate cours today
+        /// </summary>
         public decimal RateCoursToday { get; set; }
 
+        /// <summary>
+        /// Raate course on the input date
+        /// </summary>
         public decimal RateCourseOnTheDate { get; set; }
 
         /// <summary>
@@ -74,6 +80,7 @@ namespace APIapplicationCore.Manager
                 .ElementAt(0);
 
             consoleManager.ShowMajorCurrency(ListOfCurrencyRatesToday);
+
             if (RateCoursToday - RateCourseOnTheDate < 0)
             {
                 Console.ForegroundColor = ConsoleColor.Green;

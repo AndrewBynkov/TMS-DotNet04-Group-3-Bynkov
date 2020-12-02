@@ -9,8 +9,14 @@ namespace APIapplicationCore.ModelsConverter
     {
         private IRequestServerConverter _requestService = new ServicesConverter.ConverterManager();
 
+        /// <summary>
+        /// Currency name (user input)
+        /// </summary>
         public string CurrencyNameUserInput { get; set; }
 
+        /// <summary>
+        /// Dete for for comparison rates
+        /// </summary>
         public string DateUserInput { get; private set; }
 
         public async Task UserInpAsync()
@@ -25,7 +31,7 @@ namespace APIapplicationCore.ModelsConverter
 
             while (!rateToDay.Any(item => item.Cur_Abbreviation == CurrencyNameUserInput))
             {
-                Console.Write("Currency incorrect: ");
+                Console.Write("Currency incorrect, try again: ");
                 CurrencyNameUserInput = Console.ReadLine().ToUpper();
             }
         }

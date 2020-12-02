@@ -6,6 +6,9 @@ namespace APIapplicationCore.ConstantsCoverter
 {
     public class CommonConverterUrl
     {
+        /// <summary>
+        /// URL - https://www.nbrb.by
+        /// </summary>
         public const string UrlConverter = "https://www.nbrb.by";
     }
 }

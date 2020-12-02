@@ -8,7 +8,7 @@ namespace APIapplicationUI
     public class Program
     {
         private static readonly UserInput userInput = new UserInput();
-        private static readonly APIapplicationCore.Manager.ConverterManager converterManager = new APIapplicationCore.Manager.ConverterManager(userInput);
+        private static readonly ConverterManager converterManager = new ConverterManager(userInput);
         private static readonly WeatherManager export = new WeatherManager();
         private static readonly NewsManager exportNews = new NewsManager();
 
